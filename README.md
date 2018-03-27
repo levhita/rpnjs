@@ -13,7 +13,9 @@ Regular:
  NPI:
 ```1 2 + ```
 
+
 - En **NPI** los parentesís no son necesarios, se obtiene el mismo resultado con un ordén adecuado de los parámetros y operadores-
+
 Regular:
 ```( 1 + 2) - ( 3  + 4)```
 NPI:
@@ -26,15 +28,16 @@ Necesitaremos tener una entrada desde la cual leeremos los valores y operadores;
 ```
 // 1 + 2
 Input: [ 2, 1, + ]
-Pila: [ ]
+Stack: [ ]
 ```
 
 El resultado se forma al leer consecutivamente de la entrada y aplicar las siguientes reglas, hasta que se termine la entrada: 
+
 - Sí es un valor, añadirlo al tope de la pila.
 - Sí es un operador:
-1. Sacar los últimos 2 operadores de la pila.
-2. Aplicar el operador.
-3. Poner el resultado en el tope de la pila.
+  1. Sacar los últimos 2 operadores de la pila.
+  2. Aplicar el operador.
+  3. Poner el resultado en el tope de la pila.
 
 #### Ejecución Simple
 Una sola operación **1 + 2**
@@ -42,27 +45,28 @@ Una sola operación **1 + 2**
 Paso 0:
 ```
 Input: [ 1, 2, + ]
-Pila: [ ]
+Stack: [ ]
 Operación:
 ```
 
 Paso 1:
 ```
 Input: [ 2, + ]
-Pila: [ 1 ]
+Stack: [ 1 ]
 Operación: 
 ```
 
 Paso 2:
 ```
 Input: [ + ]
-Pila: [ 1, 2]
+Stack: [ 1, 2]
 Operación: 
 ```
+
 Paso 3:
 ```
 Input: [  ]
-Pila: [ 3 ]
+Stack: [ 3 ]
 Operación:  1 + 2 = 3
 ```
 
@@ -73,55 +77,55 @@ Paso 0:
 ```
 
 Input: [ 1,  2, +,  3,  4, +, - ]
-Pila: [ ]
+Stack: [ ]
 Operación:
 ```
 
 Paso 1:
 ```
 Input: [ 2, +,  3,  4, +, - ]
-Pila: [ 1 ]
+Stack: [ 1 ]
 Operación:
 ```
 
 Paso 2:
 ```
 Input: [ +,  3,  4, +, - ]
-Pila: [ 1, 2 ]
+Stack: [ 1, 2 ]
 Operación:
 ```
 
 Paso 3:
 ```
 Input: [ 3,  4, +, - ]
-Pila: [ 3 ]
+Stack: [ 3 ]
 Operación: 1 + 2 = 3
 ```
 
 Paso 4:
 ```
 Input: [ 4, +, - ]
-Pila: [ 3 , 3]
+Stack: [ 3 , 3]
 Operación: 
 ```
 
 Paso 5:
 ```
 Input: [ +, - ]
-Pila: [ 3 , 3, 4]
+Stack: [ 3, 3, 4]
 Operación: 
 ```
 
 Paso 6:
 ```
 Input: [ - ]
-Pila: [ 3 , 7 ]
+Stack: [ 3, 7 ]
 Operación: 3 + 4  = 7
 ```
 
 Paso 7:
 ```
 Input: [ ]
-Pila: [ -4 ]
-Operación: 3 + 7  = -4
+Stack: [ -4 ]
+Operación: 3 + 7 = -4
 ```
