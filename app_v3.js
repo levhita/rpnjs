@@ -6,7 +6,7 @@ var stack = [];
 while ( token=input.shift() ) {
 
 	//The first part of the algorithm states that we need to check if is a number or not
-	if(isNaN(token)){
+	if( isNaN(token) ){
 		console.log(token, 'Not a Number');
 	} else {
 		//If it's a number we put it in the LIFO, like the pile of _trastes_.

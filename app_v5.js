@@ -1,5 +1,5 @@
 //As we'll receive data from the user it'll probably come as a string;
-var input = ['1', '2', '+'];
+var input = ['1', '2', '+', '3', '4', '+', '-' ];
 var stack = [];
 
 ///FIFO means First Input First Output, like the _tortillas_ queue.
@@ -43,4 +43,7 @@ while ( token=input.shift() ) {
 		console.log(stack, token);
 	}
 }
+
+//The result is at the last element of the LIFO (if the tokens entered are valid of course)
+console.log(stack.pop());
 

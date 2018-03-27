@@ -6,7 +6,7 @@ var stack = [];
 while ( token=input.shift() ) {
 
 	//The first part of the algorithm states that we need to check if is a number or not
-	if(isNaN(token)){
+	if( isNaN(token) ){
 		console.log(token, 'Not a Number');
 	} else {
 		console.log(token, 'Number');
