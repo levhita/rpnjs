@@ -211,7 +211,7 @@ Si la entrada es válida en este punto en resultado se encuentra en el tope de l
 console.log(stack.pop());
 ```
 
-##Terminando la interface
+## Terminando la interface
 Por supuesto tu programa no puede depender de que el usuario introduzca los valores y operadores en tu arreglo así que hagamos un par de cambios para recibir entrada del usuario.
 
 Recibiremos el **String** del usuario usando la función **prompt()**, así mismo **String** cuenta con un método que divide la cadena en un **Array**, utilizando el separador que le indiquemos, en este caso un espacio en blanco.
@@ -235,7 +235,7 @@ alert("kthxbye.");
 function reversePolishNotation(input_string) {...}
 ```
 
-##Para probar en casa
+## Para probar en casa
   1. ¿Podemos introducir valores flotantes?
   2. ¿Cómo implementarías operadores que sólo toman 1 valor, como **sin()**, **tan()** y **log()**?
   3. Intenta substituir el **switch** con un **eval()**, es inseguro, pero puedes llegar a disminuir el código a 1  solo linea y automagicamente funcionarán operadores como **%**.
