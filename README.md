@@ -127,7 +127,7 @@ Paso 7:
 ```
 Input: [ ]
 Stack: [ -4 ]
-Operación: 3 + 7 = -4
+Operación: 3 - 7 = -4
 ```
 ## Ahora en Javascript
 
@@ -240,5 +240,6 @@ function reversePolishNotation(input_string) {...}
   2. ¿Cómo implementarías operadores que sólo toman 1 valor, como **sin()**, **tan()** y **log()**?
   3. Intenta substituir el **switch** con un **eval()**, es inseguro, pero puedes llegar a disminuir el código a 1  solo linea y automagicamente funcionarán operadores como **%**.
   4. Estamos lanzando una **Exception** cuando el operador es ínvalido, ¿Puedes cacharla para mostrar un mensaje error en lugar de que se detenga la ejecución del programa?
-
+  5. ¿Cómo harías un set de pruebas para poder implementar cambios sin miedo a que se destruya la compatibilidad?
+  
 
