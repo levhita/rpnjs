@@ -132,7 +132,7 @@ Operación: 3 - 7 = -4
 ## Ahora en Javascript
 
 ### 1.- Cola/FIFO
-La entrada es una estructura de datos conocida como Cola/FIFO (First Input First Output), y puede ser modelada en javascript usando un **Array** y sus métodos por defecto **shift()** y **unshift()**.
+La entrada es una estructura de datos conocida como Cola/FIFO (First Input First Output), y puede ser modelada en javascript usando un **Array** y sus métodos por defecto **shift()//Saca un elemento de la posición 0** y **push()//pone un elemento el final del Array**.
 
 Cada uno de los elementos dentro de input pueden ser sacados del inicio de la misma usando **shift()** dentro de un **while**.
 
@@ -157,7 +157,7 @@ if( isNaN(token) ){
 ```
 
 ### 3.- Pila/LIFO
-La Pila donde guardaremos los resultados es una estructura de datos conocida como LIFO (Last Input First Output), y puede ser modelada en javascript usando un **Array** y sus métodos por defecto **pop()** y **push()**.
+La Pila donde guardaremos los resultados es una estructura de datos conocida como LIFO (Last Input First Output), y puede ser modelada en javascript usando un **Array** y sus métodos por defecto **pop()//Saca un elemento del final del Array** y **push()//pone un elemento el final del Array**.
 
 En caso de que el token sea un número simplemente lo añadimos a pila, como último elemento usando **push()**:
 ```
